@@ -1,31 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.O{
+.O {
     color: blue;
 }
 
-.X{
+.X {
     color: red;
 }
-body{
+
+body {
     background-color: #548687;
     text-align: center;
 }
-.container{
+
+.container {
     height: 70vh;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.game{
+.game {
     height: 60vh;
     width: 60vh;
-  
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -33,17 +35,17 @@ body{
     gap: 2vh;
 }
 
-.box{
+.box {
     height: 18vh;
     width: 18vh;
     border-radius: 1rem;
     border: none;
     background-color: #ffffc7;
-    
+
     font-size: 3rem;
 }
 
-.bottom-container{
+.bottom-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -52,40 +54,67 @@ body{
     gap: 1rem;
 }
 
-#reset-btn{
-   
+#reset-btn {
+
     padding: 1rem;
-   font-size: 1.25rem;
-   background-color: #191919;
-   color: white;
-   border-radius: 1rem;
-   border: none;
-    
+    font-size: 1.25rem;
+    background-color: #191919;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+
 }
 
-.result-container{
+.result-container {
     gap: 1rem;
 }
 
-.result{
+.result {
     margin: 5px;
     padding: 1rem;
     font-size: 1.25rem;
     background-color: green;
     color: white;
     border-radius: 1rem;
-    border: none;   
+    border: none;
 }
 
-.newBtn{
+.newBtn {
     padding: 0.5rem;
     font-size: 1.25rem;
     background-color: green;
     color: white;
     border-radius: 1rem;
-    border: none;   
+    border: none;
 }
 
-.hide{
+.hide {
     display: none;
+}
+
+
+@media (max-width:500px) {
+
+    .container {
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .game{
+        height: 30vh;
+        width: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+    }
+
+    .box {
+        height: 8vh;
+        width: 8vh;
+    }
 }
